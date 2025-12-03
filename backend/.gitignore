@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# MongoDB data (Docker volume)
+mongodbdata/
+
 # Environment variables
 .env
 .env.local
@@ -9,7 +12,7 @@ node_modules/
 # Logs
 logs/
 *.log
-npm-debug.log*
+npm-debug. log*
 
 # OS files
 .DS_Store
@@ -19,7 +22,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-*.swo
+*. swo
 
 # Build
 dist/
@@ -27,4 +30,3 @@ build/
 
 # Docker
 docker-compose.override.yml
-
