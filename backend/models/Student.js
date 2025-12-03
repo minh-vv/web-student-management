@@ -1,0 +1,14 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const studentSchema = new Schema({
+  name: { type: String, required: true },
+  age: { type: Number, required: true },
+  class: { type: String, required: true },
+  email: { type: String }  // Trường tùy chọn
+}, { 
+  collection: 'students',
+  timestamps: true  // Tự động thêm createdAt và updatedAt
+});
+
+module.exports = mongoose. model('Student', studentSchema);
